@@ -4,9 +4,9 @@
 ```
 # Создайте json файл и установите переменное окружение с именем "JSON_COLLECTION"
 # windows
-setx COLLECTION_FILE full/path/to/the/file
+setx JSON_COLLECTION full/path/to/the/file
 # linux
-export COLLECTION_FILE=full/path/to/the/file
+export JSON_COLLECTION=full/path/to/the/file
 ```
 
 > Если вы работаете на MacOS, то возможно у вас будет устанавливаться переменное окружение не в тот системный файл, так как на MacOS уживаются два shell
