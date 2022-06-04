@@ -56,8 +56,6 @@ public class CollectionManager {
             }
             collectionManager.setup();
             return collectionManager;
-//        } catch (ConversionException e) {
-//            throw new IOException("Objects in file are invalid.");
         } catch (IllegalArgumentException | NullPointerException e) {
             throw new IOException(e.getMessage());
         }
@@ -102,14 +100,6 @@ public class CollectionManager {
         throw new IllegalArgumentException("Нет продукта с таким id");
     }
 
-//    public long getSumOfHeights() {
-//        long sumOfHeights = 0;
-//        for (Person singlePerson : persons) {
-//            sumOfHeights += singlePerson.getHeight();
-//        }
-//        return sumOfHeights;
-//    }
-
     public List<String> getInfo() {
         List<String> info = new ArrayList<>();
         info.add(products.getClass().getName());
@@ -122,18 +112,6 @@ public class CollectionManager {
     public Product removeHead() {
         return products.poll();
     }
-
-//    public Person removeAnyByHeight(long height) {
-//        Person deletedPerson = null;
-//        for (Person singlePerson : persons) {
-//            if (singlePerson.getHeight() == height) {
-//                deletedPerson = singlePerson;
-//                persons.remove(singlePerson);
-//                break;
-//            }
-//        }
-//        return deletedPerson;
-//    }
 
     public void makeGroupsByCoordinates() {
         groupsByCoordinates = new HashMap<>();
@@ -157,13 +135,32 @@ public class CollectionManager {
         }
     }
 
+    public void printAscending() {
+        List<Product> productsAscending = new ArrayList<>(products);
+        Collections.sort(productsAscending);
+        for (Product product : productsAscending) {
+            System.out.println(product);
+        }
+    }
+
+    public void filterContainsName(String substring) {
+        for (Product product : products) {
+            int index = product.getName().lastIndexOf(substring);
+            if (index == -1) {
+                System.out.print("");
+            } else {
+                System.out.println(product.toString());
+            }
+        }
+    }
+
     /**
      * сетап объекта класса CollectionManager
      */
     private void setup() {
-        for (Product productInQuestion : products) {
-            if (EntityValidator.isEntityValid(productInQuestion)) {
-                productInQuestion.setId();
+        for (Product product : products) {
+            if (EntityValidator.isEntityValid(product)) {
+                product.setId();
             } else {
                 throw new IllegalArgumentException("Поля продукта некорректны.");
             }

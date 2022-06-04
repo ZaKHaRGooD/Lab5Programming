@@ -9,14 +9,13 @@ import java.util.Set;
 import java.util.logging.Level;
 
 /**
- * Класс для валидации значения полей объекта Product из файла
+ * Класс для валидации значения полей объекта Product
  */
 public final class EntityValidator {
     private static final ValidatorFactory FACTORY;
     private static final Validator VALIDATOR;
 
     static {
-        java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
         FACTORY = Validation.buildDefaultValidatorFactory();
         VALIDATOR = FACTORY.getValidator();
     }

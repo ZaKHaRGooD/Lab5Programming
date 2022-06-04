@@ -1,16 +1,16 @@
-#Fri Jun 03 22:06:55 MSK 2022
+#Sat Jun 04 12:59:28 MSK 2022
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/Client.java=1654283200873
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/AbstractCommand.java=1654279214188
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/AddCommand.java=1654279718619
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/ClearCommand.java=1654279718586
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/ExecuteScriptCommand.java=1654279718588
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/ExitCommand.java=1654279718590
-/Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/FilterContainsNameCommand.java=1654279718604
+/Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/FilterContainsNameCommand.java=1654330703944
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/GroupCountingByCoordinatesCommand.java=1654281180259
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/HeadCommand.java=1654281913890
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/HelpCommand.java=1654279718606
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/InfoCommand.java=1654279718578
-/Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/PrintAscendingCommand.java=1654279718595
+/Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/PrintAscendingCommand.java=1654330121118
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/RemoveByIdCommand.java=1654279718572
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/RemoveHeadCommand.java=1654282872782
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/RemoveLowerCommand.java=1654279892986
@@ -18,7 +18,7 @@
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/ShowCommand.java=1654279718599
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/commands/UpdateCommand.java=1654279718602
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/configuration/Configurator.java=1654279893050
-/Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/controllers/CollectionManager.java=1654283200866
+/Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/controllers/CollectionManager.java=1654336760574
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/controllers/CommandListener.java=1654279892991
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/controllers/CommandManager.java=1654279893023
 /Users/zakhar/IdeaProjects/Lab5ProgrammingMVN/lab/lab-client/src/main/java/com/lab5/client/entities/Coordinates.java=1654283200870

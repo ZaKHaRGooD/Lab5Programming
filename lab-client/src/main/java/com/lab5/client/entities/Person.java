@@ -1,13 +1,17 @@
 package com.lab5.client.entities;
 
+import jakarta.validation.constraints.NotNull;
+
 /**
  * Класс владелец продукта
  */
 public class Person {
     private String passportID; //Длина строки не должна быть больше 30, Значение этого поля должно быть уникальным, Поле может быть null
 
-
+    @NotNull
     private String name; //Поле не может быть null, Строка не может быть пустой
+
+    @NotNull
     private Double height; //Поле может быть null, Значение поля должно быть больше 0
 
     public Person() {

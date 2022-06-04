@@ -1,5 +1,7 @@
 package com.lab5.client.entities;
 
+import jakarta.validation.constraints.NotNull;
+
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
@@ -7,19 +9,26 @@ import java.util.Comparator;
 /**
  * Класс продукта
  */
-
-// дописать сравнение
-// сделать исключения для некоторых переменных и сделать валидацию
-
 public class Product implements Comparable<Product> {
     private static long previousId = 0L;
+
+    @NotNull
     private final ZonedDateTime creationDate = ZonedDateTime.now(); //Поле не может быть null, Значение этого поля должно генерироваться автоматически
     private long id = previousId++ + 1; //Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
 
+    @NotNull
     private String name; //Поле не может быть null, Строка не может быть пустой
+
+    @NotNull
     private Coordinates coordinates; //Поле не может быть null
+
+    @NotNull
     private long price; //Поле не может быть null, Значение поля должно быть больше 0
+
+    @NotNull
     private UnitOfMeasure unitOfMeasure; //Поле может быть null
+
+    @NotNull
     private Person owner; //Поле может быть null
 
     public Product() {
