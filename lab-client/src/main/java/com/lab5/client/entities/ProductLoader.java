@@ -11,6 +11,9 @@ import java.io.Reader;
  * Загрузчик объекта типа продукт
  */
 public final class ProductLoader {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+
     private ProductLoader() {
 
     }
@@ -18,7 +21,8 @@ public final class ProductLoader {
     public static String loadName(Reader reader, String currentValue) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         while (true) {
-            System.out.print("Введите имя продукта\n(например: \"бечёвка\", имя продукта не может быть пустым)");
+            System.out.print(ANSI_GREEN + "Введите имя продукта" + ANSI_RESET
+                    + "\nнапример: \"бечёвка\", имя продукта не может быть пустым");
             if (!"".equals(currentValue)) {
                 System.out.print(", текущие значение - " + currentValue);
             }
@@ -41,7 +45,7 @@ public final class ProductLoader {
     public static long loadPrice(Reader reader, String currentValue) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         while (true) {
-            System.out.print("Введите стоимость продукта\n(например: \"1299\", введите число)");
+            System.out.print(ANSI_GREEN + "Введите стоимость продукта" + ANSI_RESET + "\nнапример: \"1299\", введите число");
             if (!"".equals(currentValue)) {
                 System.out.print(", текущие значение - " + currentValue);
             }
@@ -64,8 +68,8 @@ public final class ProductLoader {
     public static Coordinates loadCoordinates(Reader reader, String currentValue) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         while (true) {
-            System.out.print("Введите координаты\n(введите x и y через пробел, например: \"120 12\","
-                    + "\nx может быть не больше 910, y может быть не больше 525 и не может быть пустым)");
+            System.out.print(ANSI_GREEN + "Введите координаты" + ANSI_RESET + "\nвведите x и y через пробел, например: \"120 12\","
+                    + "\nx может быть не больше 910, y может быть не больше 525 и не может быть пустым");
             if (!"".equals(currentValue)) {
                 System.out.print(", текущие значение - " + currentValue);
             }
@@ -87,8 +91,8 @@ public final class ProductLoader {
     public static UnitOfMeasure loadUnitOfMeasure(Reader reader, String currentValue) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         while (true) {
-            System.out.print("Введите меру измерения\n(выберете меру измерения из списка ниже и введите его,"
-                            + "\nполе не может быть пустым)");
+            System.out.print(ANSI_GREEN + "Введите меру измерения" + ANSI_RESET + "\nвыберете меру измерения из списка ниже и введите его,"
+                            + "\nполе не может быть пустым");
             if (!"".equals(currentValue)) {
                 System.out.print(", текущие значение - " + currentValue);
             }
@@ -111,7 +115,8 @@ public final class ProductLoader {
     public static Person loadPerson(Reader reader, String currentValue) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         while (true) {
-            System.out.print("Введите имя, рост и id пользователя через пробел\n(например \"Миша 180 23\",\nимя не может быть пустым)");
+            System.out.print(ANSI_GREEN + "Введите имя, рост и id пользователя через пробел" + ANSI_RESET
+                    + "\nнапример \"Миша 180 23\",\nимя не может быть пустым");
             if (!"".equals(currentValue)) {
                 System.out.print(", текущие значение - " + currentValue);
             }

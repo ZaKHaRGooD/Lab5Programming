@@ -16,6 +16,8 @@ public final class EntityValidator {
     private static final Validator VALIDATOR;
 
     static {
+        // отрубить логгер
+        java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
         FACTORY = Validation.buildDefaultValidatorFactory();
         VALIDATOR = FACTORY.getValidator();
     }

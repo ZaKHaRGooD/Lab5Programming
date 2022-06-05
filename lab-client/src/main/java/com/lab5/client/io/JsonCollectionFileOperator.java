@@ -20,7 +20,6 @@ public class JsonCollectionFileOperator implements CollectionFileReader<Collecti
         ObjectMapper mapper = new ObjectMapper().findAndRegisterModules().registerModule(new JavaTimeModule());
         CollectionManager collectionManager = null;
         try {
-            System.out.println(mapper);
             collectionManager = mapper.readValue(file, CollectionManager.class);
         } catch (IOException e) {
              e.printStackTrace();
@@ -37,4 +36,3 @@ public class JsonCollectionFileOperator implements CollectionFileReader<Collecti
         System.out.println("Коллекция успешно сохранена в файл");
     }
 }
-
